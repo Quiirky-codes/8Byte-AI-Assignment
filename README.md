@@ -25,14 +25,14 @@ It sets up an end-to-end pipeline to fetch stock market data from Alpha Vantage 
 
 ```
 stock-pipeline-airflow/
-│── docker-compose.yml         # Bring up Airflow + Postgres
-│── .env.example               # Template for secrets (copy → .env)
+│── docker-compose.yml         
+│── .env.example               
 │── dags/
-│   └── stock_dag.py           # Airflow DAG definition
+│   └── stock_dag.py           
 │── scripts/
-│   └── fetch_and_store.py     # Fetch Alpha Vantage data & insert into Postgres
+│   └── fetch_and_store.py     
 │── sql/
-│   └── init.sql               # Creates the table schema
+│   └── init.sql               
 ```
 
 # Setup Instructions
